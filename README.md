@@ -356,8 +356,8 @@ MIT License - feel free to use this project for learning and portfolio purposes.
 ## 👤 Author
 
 **Rabin Dhakal**
-- GitHub: [@rabindhakal](https://github.com/rabindhakal)
-- LinkedIn: [Rabin Dhakal](https://linkedin.com/in/rabin-dhakal)
+- GitHub: [@rabindhakal](https://github.com/ashrotd)
+- LinkedIn: [Rabin Dhakal](https://linkedin.com/in/rabinndhakal)
 - Email: Dhakalrabin04@gmail.com
 
 ---
