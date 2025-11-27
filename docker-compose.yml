@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # Backend API Service
+  backend:
+    build: ./backend
+    container_name: singing-coach-backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+    env_file:
+      - ./backend/.env
+    command: npm run dev
+    networks:
+      - singing-coach-network
+    restart: unless-stopped
+
+  # Frontend Service
+  frontend:
+    build: ./frontend
+    container_name: singing-coach-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:3001
+    command: npm run dev
+    networks:
+      - singing-coach-network
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+networks:
+  singing-coach-network:
+    driver: bridge
