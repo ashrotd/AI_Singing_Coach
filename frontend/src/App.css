@@ -1,15 +1,13 @@
 .App {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f9fafb;
 }
 
 .App-header {
   text-align: center;
   color: white;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 h1 {
@@ -22,9 +20,10 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  padding: 2rem;
-  margin-top: 2rem;
+  padding: 1.5rem;
+  margin: 2rem auto 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 500px;
 }
 
 .status-card h3 {
@@ -35,4 +34,10 @@ h1 {
   font-size: 0.9rem;
   opacity: 0.8;
   margin-top: 0.5rem;
+}
+
+.App-main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
